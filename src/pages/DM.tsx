@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mic, Smile, Image, Heart, Phone, Video, Info, MessageCircle, Send } from 'lucide-react';
+import { Mic, Smile, Image, Heart, Phone, Video, Info, MessageCircle } from 'lucide-react';
 import Picker from '@emoji-mart/react';
 import data from '@emoji-mart/data';
 import * as S from '../styles/DM';
@@ -85,7 +85,7 @@ function DM() {
                 />
                 {message.trim().length > 0 ? (
                   <S.SendButton onClick={handleSend}>
-                    <Send size={24} color="#0095f6" />
+                    <span>Send</span>
                   </S.SendButton>
                 ) : (
                   <S.IconGroup>
