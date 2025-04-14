@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import * as S from './style.ts'
+import * as S from '../style.ts'
 
 function Login() {
   const navigate = useNavigate();
