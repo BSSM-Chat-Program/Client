@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import DM from './pages/DM';
+import DM from './pages/dm/DM';
 import Login from './pages/Login';
 
 function App() {
