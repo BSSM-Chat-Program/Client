@@ -1,8 +1,7 @@
-// src/pages/OAuthCallback.tsx
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import customAxios from '@/lib/customAxios';
-import { useAuthStore } from '@/store/authStore';
+import customAxios from '../lib/customAxios';
+import { useAuthStore } from '../store/authStore';
 
 export default function OAuthCallback() {
   const setUser = useAuthStore((s) => s.setUser);

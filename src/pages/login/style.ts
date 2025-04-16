@@ -1,4 +1,3 @@
-// src/pages/login/style.ts
 import styled from '@emotion/styled';
 
 export const LoginContainer = styled.div`
@@ -7,6 +6,7 @@ export const LoginContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: #fff;
 `;

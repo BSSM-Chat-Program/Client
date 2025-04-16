@@ -1,4 +1,3 @@
-// src/pages/login/Login.tsx
 import * as S from './style';
 import { FcGoogle } from 'react-icons/fc';
 import { FaGithub } from 'react-icons/fa';
