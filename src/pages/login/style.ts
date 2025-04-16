@@ -1,4 +1,3 @@
-// src/pages/login/style.ts
 import styled from '@emotion/styled';
 
 export const LoginContainer = styled.div`

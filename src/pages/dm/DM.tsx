@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Mic, Smile, Image, Heart, Phone, Video, Info, MessageCircle } from 'lucide-react';
 import Picker from '@emoji-mart/react';
 import data from '@emoji-mart/data';
-import * as S from './style';
+import * as S from './style.ts';
 import { chats, messages } from '../../data/mockData';
 
 function DM() {
