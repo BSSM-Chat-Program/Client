@@ -4,8 +4,10 @@ import Picker from '@emoji-mart/react';
 import data from '@emoji-mart/data';
 import * as S from './style.ts';
 import { chats, messages } from '../../data/mockData';
+import { useAuthStore } from '../../store/authStore.ts';
 
 function DM() {
+  const user = useAuthStore((s) => s.user);
   const [selectedChat, setSelectedChat] = useState<number | null>(null);
   const [message, setMessage] = useState('');
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
@@ -25,7 +27,8 @@ function DM() {
     <S.Container>
       <S.Sidebar>
         <S.Header>
-          <S.Username>사용자</S.Username>
+          <S.Avatar src={user?.profileImage ?? ''} alt="profile" />
+          <S.Username>{user?.name ?? '사용자'}</S.Username>
         </S.Header>
         <S.SearchContainer>
           <S.SearchInput placeholder="검색" />

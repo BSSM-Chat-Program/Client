@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/oauth2/callback" element={<OAuthCallback />} />
+        <Route path="/oauth2" element={<OAuthCallback />} />
         <Route
           path="/dm"
           element={
