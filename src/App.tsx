@@ -7,7 +7,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import { useAuth } from './hooks/useAuth';
 
 function App() {
-  useAuth(); // 새로고침 시 user 상태 복구
+  useAuth();
 
   return (
     <BrowserRouter>
